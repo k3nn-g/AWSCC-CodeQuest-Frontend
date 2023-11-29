@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Template</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" >
 </head>
 <body>
     <div>
@@ -12,10 +13,10 @@
             <nav>
                 <p><span>Front-</span>End</p>
                 <ul>
-                    <li>Home</li>
-                    <li>Blog</li>
-                    <li>Popular</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
             <section>
@@ -29,38 +30,41 @@
         <main>
             <div>
                 <article> 
-                    <div> 
-                        <div> 
+                    <div class="postcontainer"> 
+                        <div class="container"> 
                             <img src="images/img1.avif" alt="Unveiling the Blueprint of the Web Image">
                         </div>
                     
-                        <div>
+                        <div class="content">
                             <a>Unveiling the Blueprint - Mastering HTML Document Structure</a> 
-                            <p>Posted on November 13, 2023 by AWSCC-DSWD</p> 
+                            <p class="author">Posted on November 13, 2023 by AWSCC-DSWD</p> 
                             <p>Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.
                             </p>
                         </div>
                     </div>
-
-                    <div>
-                        <div>
+                    <hr>
+                    <div class="postcontainer">
+                        <div class="container">
                             <img src="images/img2.jpeg" alt="Mastering the art of Web">
                         </div>
-                        <div>
+
+                        <div class="content">
                             <a>Mastering the Art: Creating Interactive Web Experiences</a>
-                            <p>Posted on November 12, 2023 by AWSCC-DSWD</p>
+                            <p class="author">Posted on November 12, 2023 by AWSCC-DSWD</p>
                             <p>Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.</p>
                         </div> 
                     </div>
-                        <div>
+                    <hr>
+                    <div class="postcontainer">
+                        <div class="container">
                             <img src="images/img3.jpeg" alt="Revolutionize Web Design Layouts">
                         </div>
-                        <div>
+
+                        <div class="content">
                             <a>Revolutionize Web Design: Crafting Dynamic Layouts</a>
-                            <p>Posted on November 11, 2023 by AWSCC-DSWD</p>
+                            <p class="author">Posted on November 11, 2023 by AWSCC-DSWD</p>
                             <p>Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes.</p>
                         </div>
-                    <div >
                     </div>
                 </article>
             </div>
@@ -106,7 +110,7 @@
                                 <img src="images/posts/post4.png">
                             </div>
                             <div class="popular-post-content">
-                                <a>The state of a chexbox</a>
+                                <a>The state of a checkbox</a>
                                 <p>I was in the middle of creating a small web.</p>
                             </div>
                         </div>
@@ -114,13 +118,13 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="socials">
                     <h2>FOLLOW US</h2>
                     <div>
-                        <img src="images/social/facebook.png"><a>https://www.facebook.com/</a>
-                        <img src="images/social/twitter.png"><a>https://twitter.com/</a>
-                        <img src="images/social/pinterest.png"><a>https://www.pinterest.com/</a>
-                        <img src="images/social/linkedin.png"><a>https://www.linkedin.com/</a>
+                        <a href="https://www.facebook.com/"><img src="images/social/facebook.png">https://www.facebook.com/</a>
+                        <a href="https://twitter.com/"><img src="images/social/twitter.png">https://twitter.com/</a>
+                        <a href="https://www.pinterest.com/"><img src="images/social/pinterest.png">https://www.pinterest.com/</a>
+                        <a href="https://www.linkedin.com/"><img src="images/social/linkedin.png">https://www.linkedin.com/</a>
                     </div>
                 </div>
             </aside>
@@ -135,17 +139,20 @@
                 </div>
             </div>
             <div class="footerBoxes">
+                <div class="footerBox">
                     <h3>Terms of Service</h3>
                     <hr>
                     <p>Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.</p>
+                </div>
             </div>
             <div class="footerBoxes">
+                <div class="footerBox">
                     <h3>Help & Support</h3>
                     <hr>
                     <p>If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions.</p>
+                </div>
             </div>
-            <hr>
-            <p>2023 Blog Structure</p>
+            <p class="copyright">2023 Blog Structure</p>
         </footer>
     </div>
 </body>
