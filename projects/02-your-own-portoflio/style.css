@@ -1,1 +1,262 @@
-/* GO WILD AND BE CREATIVE! */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/*general*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(85,85,85);
+}
+
+/*Transition*/
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+/*nav*/
+nav, .links-nav {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+    background-color: rgb(149, 201, 223);
+}
+
+.links-nav {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: rgb(32, 83, 107);
+    text-decoration: underline;
+    text-underline-offset: 1.3rem;
+    text-decoration-color: rgb(181, 181, 200);
+}
+
+.name-logo {
+    font-size: 1.5rem;
+}
+
+.name-logo:hover {
+    cursor: default;
+}
+
+span {
+    color: rgb(32, 83, 107);
+}
+
+/* Sections */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section_pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    display: flex;
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p {
+    font-weight: 800;
+}
+
+.section-text-p {
+    text-align: center;
+}
+
+.section-text-p2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+}
+
+.title {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+/*social section*/
+#socials {
+    gap: 5rem;
+    height: 25vh;
+}
+
+#social-section {
+    text-align: center;
+    margin-bottom: 20px;
+    font: 200;
+}
+
+#socials-pic {
+    height: 75px;
+    width: 75px;
+    margin: auto;
+    gap: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+/*buttons*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: rgb(32, 83, 107) 0.12rem solid;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 0.6rem;
+    width: 8rem;
+    border-radius: 2rem;
+    margin-top: 9px;
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer;
+}
+
+.btn-color-1, .btn-color-2:hover {
+    background: rgb(32, 83, 107);
+    color: white;
+}
+
+.btn-color-1:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+/*ABOUT SECTION*/
+#about {
+    position: relative;
+    height: 80vh;
+}
+
+#about p, h1{
+    margin-top: 0;
+}
+.about-containers {
+    gap: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.section_pic-container img {
+    border-radius: 2rem;
+}
+
+.details-container {
+    padding: 1.4rem;
+    flex: 1;
+    margin-top: 2rem;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(32, 83, 107) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+}
+
+.section-container {
+    gap: 3.6rem;
+    height: 60%;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+#contact img {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 1.5rem;
+    border: rgb(32, 83, 107) 0.1rem solid;
+    border-color: rgb(85,85,85);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.container-info-container p {
+    font-size: larger;
+}
+
+footer {
+    background-color: rgb(149, 201, 223);
+}
+
+footer a {
+    color: rgb(32, 83, 107);
+    font-size: larger;
+}
