@@ -149,3 +149,22 @@
 //     ```
 
 // *These tasks will help you practice selecting and modifying elements in the DOM using various JavaScript methods. Good luck! 🚀*
+
+const myLink = document.getElementById("myLink");
+myLink.setAttribute("target=", "_blank");
+console.log(myLink);
+
+const myDiv = document.getElementById("myDiv");
+myDiv.classList.add("highlight");
+console.log(myDiv);
+
+const myDiv2 = document.getElementsByClassName(".highlight");
+myDiv2.classList.remove("highlight");
+console.log(myDiv2);
+
+const myParagraph = document.getElementById("myParagraph");
+myParagraph.textContent = "This is the new value of the paragraph";
+myParagraph.style.color = "red";
+myParagraph.style.backgroundColor = "lightgray";
+myParagraph.style.fontSize = "18px";
+console.log(myParagraph);
