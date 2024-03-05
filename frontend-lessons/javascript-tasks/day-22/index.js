@@ -86,15 +86,15 @@
 //Task 1
 const div = document.getElementById("dynamicContainer");
 const imgElement = document.createElement("img");
-newImage.src = "https://www.pinterest.ph/pin/616289530264242377/";
-div.appendChild("imgElement");
+imgElement.src = "https://twitter.com/pledis_17/status/1660510801294422017/photo/1";
+div.appendChild(imgElement);
 console.log(div);
 
 
 //Task 2
 const list = document.querySelector('ul');
 const itemRemoved = list.children[1];
-list.removeChild("itemRemoved");
+list.removeChild(itemRemoved);
 
 const LastItem = list.lastElementChild;
 LastItem.remove();
