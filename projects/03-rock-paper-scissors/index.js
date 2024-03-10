@@ -17,15 +17,18 @@ let player1Choice;
 
 // Step 3: Add event listeners to the buttons
 rockBtn.addEventListener("click", function () {
-    startRound("Rock");
+    player1Choice = "Rock";
+    startRound();
 });
 
 paperBtn.addEventListener("click", function () {
-    startRound("Paper");
+    player1Choice = "Paper";
+    startRound();
 });
 
 scissorsBtn.addEventListener("click", function () {
-    startRound("Scissors");
+    player1Choice = "Scissors";
+    startRound();
 });
 
 resetGameButton.addEventListener("click", function () { 
@@ -37,7 +40,7 @@ resetGameButton.addEventListener("click", function () {
 });
 
 // Step 4: Define helper functions that will be the actions of the game
-function startRound(player1Choice) {
+function startRound() {
     const player2Choice = choices[Math.floor(Math.random() * choices.length)];
 
     player1ChoiceDisplay.textContent = `${player1Choice}`;
@@ -47,10 +50,28 @@ function startRound(player1Choice) {
 
     if (result === "Player 1 Wins") {   
         player1ScoreDisplay.textContent++;
+        gameStatusDisplay.textContent = "Player 1 Wins";
     } else if (result === "Player 2 Wins") {
         player2ScoreDisplay.textContent++;
+        gameStatusDisplay.textContent = "Player 2 Wins";
     } else {
         gameStatusDisplay.textContent = result;
+    }
+
+    if(player2Choice === 'Rock'){
+        player2ChoiceDisplay.innerHTML = '<img src="./assets/hand-rock-solid.svg" alt="Rock">';
+    }else if(player2Choice === 'Paper'){
+        player2ChoiceDisplay.innerHTML = '<img src="./assets/hand-paper-solid.svg" alt="Paper">';
+    }else if(player2Choice === 'Scissors'){
+        player2ChoiceDisplay.innerHTML = '<img src="./assets/hand-scissors-solid.svg" alt="Scissors">';
+    }
+
+    if(player1Choice === 'Rock'){
+        player1ChoiceDisplay.innerHTML = '<img src="./assets/hand-rock-solid.svg" alt="Rock">';
+    }else if(player1Choice === 'Paper'){
+        player1ChoiceDisplay.innerHTML = '<img src="./assets/hand-paper-solid.svg" alt="Paper">';
+    }else if(player1Choice === 'Scissors'){
+        player1ChoiceDisplay.innerHTML = '<img src="./assets/hand-scissors-solid.svg" alt="Scissors">';
     }
 }
 
@@ -62,7 +83,7 @@ function winner(player1Choice, player2Choice) {
         (player1Choice === "Paper" && player2Choice === "Rock") ||
         (player1Choice === "Scissors" && player2Choice === "Paper")
     ) { 
-        return "Player 1 Wins"; 
+        return "Player 1 Wins";
     } else {
         return "Player 2 Wins";
     }
