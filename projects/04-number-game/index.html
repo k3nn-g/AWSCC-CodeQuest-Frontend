@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project: Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav><h1>Welcome to Paimon's Number Guessing Game!</h1></nav>
+<body>
+    <div class="container">
+        <div id="intro-div">
+            <div class="blur-background"></div>
+            <div class="info-container">
+            <p>Welcome, Traveler, to the fascinating world of number guessing! </p>
+            <p>In this enchanting game, you'll be challenged to guess a secret number hidden within a magical range. Will your intuition guide you to the right answer, or will the numbers keep their secrets? So, gear up, Traveler, and let the guessing games begin!</p>
+            <button id="reset-game-btn">Restart Game</button>
+            </div>
+            <img id="paimon-img" src="https://upload-os-bbs.hoyolab.com/upload/2020/07/19/1096276/5d55575548a30ca21fcdb50285b9c694_6465808929343059713.gif">
+        </div>
+    </div>
+
+    <div class="input-container">
+        <h2>TRY TO GUESS A NUMBER BETWEEN 1 - 100!</h2>
+        <input type="number" placeholder="Guess a number, Traveler!" id="guess-input">
+        <button id="submit-btn" class="submit-btn">Submit</button>
+    </div>
+
+    <div id="game-status">ENTER A NUMBER TO START THE GAME!</div>
+    <div id="guide-display"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

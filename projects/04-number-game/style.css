@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Signika:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 12vh;
+    background-color: rgb(44, 44, 44);
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    background-image: url("https://preview.redd.it/66ic9c791ih61.png?auto=webp&s=967caa3ebc04e9262d7ba83ee0534015a3a5cb5b");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    text-align: center;
+    height: auto;
+    padding: 10px 15px 12px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    padding-top: 6px;
+    height: 70px;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    height: auto;
+}
+
+#intro-div {
+    display: flex;
+}
+
+#paimon-img {
+    height: 250px;
+    width: 200px;
+}
+
+.submit-btn, #guess-input {
+    background: rgb(226, 246, 255);
+    color: rgb(0, 0, 0);
+    border: 2px solid white;
+    height: auto;
+    padding: 10px 25px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 3px 0 black;
+}
+
+#reset-game-btn {
+    background: rgb(228, 228, 228);
+    border: 1px  rgb(116, 116, 116);
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px 0 rgb(131, 131, 131);
+}
+
+.submit-btn:hover, #reset-game-btn:hover {
+    cursor: pointer;
+}
+
+.submit-btn, #reset-game-btn {
+    font-family: 'Signika', sans-serif;
+}
+
+.container {
+    padding: 10px;
+}
+
+.blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.75px);
+    z-index: -1;
+}
+
+.info-container {
+    border: 2px;
+    border-radius: 55px;
+    padding: 20px;
+    background-color: rgba(75, 74, 74, 0.541); 
+}
+
+.input-container {
+    padding: 20px;
+}
+
+#game-status {
+    font-size: 23px;
+    color: rgb(205, 237, 255);
+    font-weight: 500;
+    text-shadow: 1px 1px 1px black;
+}
+
+#guide-display {
+    text-align: center;
+}
