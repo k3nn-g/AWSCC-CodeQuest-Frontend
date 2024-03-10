@@ -83,3 +83,21 @@
 //    </body>
 //    </html>
 //    ```
+//Task 1
+const div = document.getElementById("dynamicContainer");
+const imgElement = document.createElement("img");
+imgElement.src = "https://twitter.com/pledis_17/status/1660510801294422017/photo/1";
+div.appendChild(imgElement);
+console.log(div);
+
+
+//Task 2
+const list = document.querySelector('ul');
+const itemRemoved = list.children[1];
+list.removeChild(itemRemoved);
+
+const LastItem = list.lastElementChild;
+LastItem.remove();
+
+list.innerHTML = '';
+

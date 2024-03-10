@@ -37,3 +37,46 @@
 // 10. Use a loop to iterate over all paragraphs and assign a different background color from the array to each paragraph.
 
 // *These tasks will help you practice selecting, modifying, creating, and removing elements from the DOM using JavaScript. Good luck! 🌐*
+
+    /*Task 1*/
+    const paragraphElements = document.getElementsByTagName("p");
+    for (let i = 0; i < paragraphElements.length; i++) {
+        console.log("Paragraph: ", paragraphElements[i]);
+    }
+    const infoElements = document.getElementsByClassName("info");
+    for (let i = 0; i <  infoElements.length; i++) {
+        console.log("Information: ", infoElements[i]);
+    }
+    const headerElements = document.getElementById("header");
+    console.log("Header: ", headerElements);
+
+    const highlightElements = document.querySelector(".highlight");
+    console.log("Highlight: ", highlightElements);
+
+    /*Task 2*/
+    const secondParag = document.getElementsByTagName("p")[1];
+    secondParag.textContent = "This paragraph is now updated!";
+
+    const div = document.getElementById("header");
+    div.style.backgroundColor = "blue";
+
+    /*Task 3*/
+    const header3 = document.createElement("h3");
+    header3.textContent = "New Section";
+    document.body.appendChild(header3);
+
+    /*Task 4*/
+    const paragraph1 = document.querySelector("p");
+    document.body.removeChild(paragraph1);
+
+    /*Task 5*/
+    const headerclicker = document.getElementById("header");
+    headerclicker.addEventListener('click', () => {
+        console.log("Header clicked!");
+    })
+
+    /*Task 6*/
+    let color = ["blue", "black", "maroon", "grey"];
+    for (let i = 0; i < paragraphElements.length; i++) {
+        paragraphElements[i].style.backgroundColor = color[i];
+    }
